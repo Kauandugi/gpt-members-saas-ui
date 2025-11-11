@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px); /* Move 10px para cima */
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@theme {
+  --font-display: "Roboto", sans-serif;
+  --font-display--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  --font-display--font-variation-settings: "opsz" 32;
+
+  /*Paleta de cores*/
+  --color-brand-blue: #0367fb;
+  --color-brand-dark: #0f2f2c;
+  --color-brand-green: #34ff67;
+  --color-brand-gray: #e9ece9;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite; /* 3 segundos, suave, infinito */
+}
+
+@layer utilities {
+  .animate-marquee-slow {
+    animation: marquee 40s linear infinite;
+  }
+}
+
+body {
+  background-color: #f8fafc;
+}
