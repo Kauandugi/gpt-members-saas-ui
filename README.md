@@ -24,5 +24,5 @@ Para visualizar a interface na sua máquina, você precisará do [Node.js](https
 
 **1. Clone o repositório:**
 ```bash
-git clone [https://github.com/Kauandugi/gptmembers.git](https://github.com/Kauandugi/gptmembers.git)
-cd gptmembers
+git clone [https://github.com/Kauandugi/gpt-members-saas-ui.git](https://github.com/Kauandugi/gpt-members-saas-ui.git)
+cd gpt-members-saas-ui
